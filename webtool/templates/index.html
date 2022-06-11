@@ -1,58 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<title>登入頁面</title>
+
 <html>
 
 <head>
-<script type="text/javascript" src="./static/script/jquery.min.js"> </script>
-
+    <meta charset=' utf-8 '>
+    <link href="{% static 'css/login.css ' %}" rel="stylesheet">
+    <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
 </head>
 
 
 <body>
-    <div class ='warp' align="center">
-        <label class="text"for="Account">Account</label>
-        <input class="ac_pa" type="text" id="text1" value="" placeholder="帳號"><br>
 
-        <label class="text" for="Password" >Password</label>
-        <input class="ac_pa" type="Password" id="text1" value="" placeholder="密碼"><br>
+<div id = "login_frame">
 
-        <button class="box" value="" onclick="">Login</button><br>
-        <button class="box" value="" onclick="">Reset</button><br>
-        <button class="box" onclick="btn_fn('clear')" value="clear">clear</button>
-    </div>
-
-
+    <label class="text" id="text_ac" for="Account">Account</label>
+    <input class="ac_pa" id="in_ac" type="text" value="" placeholder="帳號" ><br>
+    <label class="text" id="text_pa" for="Password">Password</label></td>
+    <input class="ac_pa" id="in_pa" type="Password" value="" placeholder="密碼"><br>                        
+    <button class="box" id="login" onclick="login()">Login</button>
+    <button class="box" id="clear" onclick="fn_val('clear')">Clear</button>
+      
+</div>
 
 </body>
-<script>
-    function btn_fn(status) {
-        if (status == 'clear') {
-            ($(#text1).val(''))
-        }
 
-</script>
+
 </html>
-<style>
-.text {
-    width:15%;
-    height:30px;
-    font-size: 20px;
-    background-color:#ffffff;
-}
-.ac_pa {
-	width:15%;
-	height:30px;
-	font-size: 20px;
-	background-color:#ffffff;
-}
-.box {
-	width:15%;
-	height:30px;
-	font-size: 14px;
-	background-color:#ffffff;
 
-}
-.box:hover {
-	background-color:#00AEAE;
+<script>
+    function fn_val(status) {
+        if (status == 'login') {
+            window.location.href="login.html"
+        } else if (status == 'clear') {
+            $('#in_ac').val('')
+            $('#in_pa').val('')
 
-}
+        }
+    }
+</script>
 
-</style>

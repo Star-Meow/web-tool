@@ -1,0 +1,24 @@
+.text {
+    width: 15%;
+    height: 30px;
+    font-size: 20px;
+    background-color: #ffffff;
+}
+
+.ac_pa {
+    width: 15%;
+    height: 30px;
+    font-size: 20px;
+    background-color: #ffffff;
+}
+
+.box {
+    width: 8%;
+    height: 30px;
+    font-size: 14px;
+    background-color: #ffffff;
+}
+
+.box:hover {
+    background-color: #00AEAE;
+}

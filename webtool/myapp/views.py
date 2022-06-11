@@ -25,5 +25,5 @@ def login(request):
 	else:
 		message = '帳號、密碼及驗證碼都必須輸入！'
 		postform = forms.PostForm()
-	return render(request, "login.html", locals())
+	return render(request, "index.html", locals())
 
