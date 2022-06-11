@@ -1,0 +1,58 @@
+<html>
+
+<head>
+<script type="text/javascript" src="./static/script/jquery.min.js"> </script>
+
+</head>
+
+
+<body>
+    <div class ='warp' align="center">
+        <label class="text"for="Account">Account</label>
+        <input class="ac_pa" type="text" id="text1" value="" placeholder="帳號"><br>
+
+        <label class="text" for="Password" >Password</label>
+        <input class="ac_pa" type="Password" id="text1" value="" placeholder="密碼"><br>
+
+        <button class="box" value="" onclick="">Login</button><br>
+        <button class="box" value="" onclick="">Reset</button><br>
+        <button class="box" onclick="btn_fn('clear')" value="clear">clear</button>
+    </div>
+
+
+
+</body>
+<script>
+    function btn_fn(status) {
+        if (status == 'clear') {
+            ($(#text1).val(''))
+        }
+
+</script>
+</html>
+<style>
+.text {
+    width:15%;
+    height:30px;
+    font-size: 20px;
+    background-color:#ffffff;
+}
+.ac_pa {
+	width:15%;
+	height:30px;
+	font-size: 20px;
+	background-color:#ffffff;
+}
+.box {
+	width:15%;
+	height:30px;
+	font-size: 14px;
+	background-color:#ffffff;
+
+}
+.box:hover {
+	background-color:#00AEAE;
+
+}
+
+</style>
