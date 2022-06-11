@@ -1,19 +1,62 @@
-.text {
-    width: 15%;
-    height: 30px;
-    font-size: 20px;
-    background-color: #ffffff;
+#login_frame {
+    width: 500px;
+    height: 250px;
+    padding: 13px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -200px;
+    background-color: rgba(4, 5, 5, 0.363);
+    border-radius: 10px;
+    text-align: center;
 }
 
-.ac_pa {
-    width: 15%;
+form p>* {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#image_logo {
+    margin-top: -25px;
+    float: right;
+    width: 96px;
+    height: 96px;
+}
+
+#title {
+    font-size: 30px;
+    font-family: 標楷體;
+    width: 100px;
+    height: 40px;
+    line-height: 30px;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.label_acpa {
+    font-size: 30px;
+    font-family: CenturyGothic;
+    text-align: center;
+    background-color: rgba(245, 245, 245, 0.363);
+    width: 20%;
     height: 30px;
     font-size: 20px;
-    background-color: #ffffff;
+}
+
+.input_acpa {
+    width: 278px;
+    height: 28px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 0;
 }
 
 .box {
-    width: 8%;
+    font-size: 20px;
+    font-family: CenturyGothic;
+    width: 20%;
     height: 30px;
     font-size: 14px;
     background-color: #ffffff;

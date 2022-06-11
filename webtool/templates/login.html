@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<title>登入頁面</title>
+
+<html>
+
+<head>
+    <meta charset=' utf-8 '>
+    <link href="{% static 'css/login.css ' %}" rel="stylesheet">
+    <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+</head>
+
+
+<body >
+
+
+<div id = "login_frame">
+    <p><label id="title">使用者登入</label></p>
+    <img id="image_logo" src="{% static 'image/okayusmile.png' %}">
+    <p><label class="label_acpa" for="Account">Account</label></p>
+    <input class="input_acpa" id="ac" type="text" value="" placeholder="帳號" ><br>
+    <p><label class="label_acpa" for="Password">Password</label></p>
+    <input class="input_acpa" id="pa" type="Password" value="" placeholder="密碼"><br>                        
+    <button class="box" id="login" onclick="login()">Login</button>
+    <button class="box" id="clear" onclick="fn_val('clear')">Reset</button>
+      
+</div>
+
+</body>
+
+
+</html>
+
+<script>
+    function fn_val(status) {
+        if (status == 'login') {
+
+        } else if (status == 'clear') {
+            $('#ac').val('')
+            $('#pa').val('')
+
+        }
+    }
+</script>
+
