@@ -7,8 +7,8 @@
 }
 
 #login_frame {
-    width: 550px;
-    height: 260px;
+    width: 650px;
+    height: 300px;
     padding: 13px;
     position: absolute;
     left: 50%;
@@ -17,7 +17,6 @@
     margin-top: -200px;
     background-color: rgba(12, 14, 14, 0.514);
     border-radius: 10px;
-    text-align: center;
 }
 
 form p>* {
@@ -25,22 +24,34 @@ form p>* {
     vertical-align: left;
 }
 
-#title {
-    font-size: 30px;
-    font-family: 標楷體;
-    width: 100px;
-    height: 40px;
-    line-height: 30px;
-    text-align: center;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+.container {
+    display: flex;
+    flex-direction: column;
+    /*主要框架*/
 }
 
-#image_logo {
-    margin-top: -10px;
-    float: inline-start;
-    width: 64px;
-    height: 64px;
+.acpa_div {
+    display: flex;
+    flex-direction: column;
+    /*li_box1~3*/
+}
+
+#li_box1 {
+    order: 1;
+}
+
+#li_box2 {
+    order: 2;
+}
+
+#li_box3 {
+    order: 3;
+}
+
+.label_input {
+    display: flex;
+    flex-direction: row;
+    /*label~input*/
 }
 
 .label_acpa {
@@ -52,6 +63,7 @@ form p>* {
     height: 30px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+    order: -1;
 }
 
 .input_acpa {
@@ -60,9 +72,16 @@ form p>* {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     border: 0;
+    order: 1;
 }
 
-.box {
+.btn_div {
+    display: flex;
+    flex-direction: row;
+    /*btn1~3*/
+}
+
+.btn {
     font-size: 20px;
     font-family: Kdam Thmor Pro;
     width: 20%;
@@ -75,6 +94,45 @@ form p>* {
     border-bottom-right-radius: 15px;
 }
 
-.box:hover {
+.btn:hover {
     background-color: #e73636;
+}
+
+#login {
+    order: 1;
+}
+
+#register {
+    order: 2;
+}
+
+#clear {
+    order: 3;
+}
+
+.title_div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /*title和圖片*/
+}
+
+#title {
+    font-size: 30px;
+    font-family: 標楷體;
+    width: 100px;
+    height: 40px;
+    line-height: 30px;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    order: 1;
+}
+
+#image_logo {
+    margin-top: -10px;
+    float: inline-start;
+    width: 64px;
+    height: 64px;
+    order: 2;
 }

@@ -14,39 +14,39 @@
 
 <body >
 
-<div id = "login_frame">
+<div class = "container" id = "login_frame">
 
+    <div class = "title_div">
+        
+        <label id="title">登入介面</label>
 
-    <div>
         <img id="image_logo" src="{% static 'image/okayusmile.png' %}">
-    </div>
-    <div class = "div">
-        <p>
-            <label id="title">登入介面</label>
         </p>
     </div>
 
-    <div>
-        <p>
+
+    <div class = "acpa_div">
+
+        <div class = "label_input" id ="li_box1">
             <label class="label_acpa" for="Account" >Account</label>
             <input class="input_acpa" id="ac" type="text" value="" placeholder="帳號" >
-        </p>
-
-        <p>
+        </div>
+        <div class = "label_input" id ="li_box2">
             <label class="label_acpa" for="Password">Password</label>
             <input class="input_acpa" id="pa" type="Password" value="" placeholder="密碼" >
-        </p>
-
-        <p>
+        </div>
+        <div class = "label_input" id ="li_box3">
             <label class="label_acpa" for="Password">CAPTCHA</label>
             <input class="input_acpa" id="CAPTCHA" type="text" value="" placeholder="驗證碼" >
-        </p>
+        </div>
+
     </div>
                      
-    <div class = "div">
+    <div class = "btn_div">
         
-        <button class="box" id="login" onclick="login()">Login</button>
-        <button class="box" id="clear" onclick="fn_val('clear')">Reset</button>
+        <button class="btn" id="login" onclick="login()">Login</button>
+        <button class="btn" id="clear" onclick="fn_val('clear')">Reset</button>
+        <button class="btn" id="register" onclick="">register</button>
     </div>
 
 </div>
