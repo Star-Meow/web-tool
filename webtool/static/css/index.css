@@ -1,9 +1,9 @@
-@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;900&display=swap');
 *{
     margin: 0;
     padding: 0;
     list-style:none ;
-    font-family: 'Noto Sans TC',sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
 }
 /*reset css*/
 .main_header{
