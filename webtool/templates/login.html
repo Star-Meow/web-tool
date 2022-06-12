@@ -1,30 +1,54 @@
 <!DOCTYPE html>
-
 {% load static %}
 <title>登入頁面</title>
 
 <html>
 
 <head>
-    <meta charset=' utf-8 '>
-    <link href="{% static 'css/login.css ' %}" rel="stylesheet">
+    <meta charset="UTF-8">
+
+    <link href="{% static 'css/login.css ' %}" rel="stylesheet" type='text/css'>
     <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
 </head>
 
+
 <body >
 
-
 <div id = "login_frame">
-    <div id = "login_title"><label id="title">使用者登入</label></div>
 
-    <div><img id="image_logo" src="{% static 'image/okayusmile.png' %}"></div>
-    <p><label class="label_acpa" for="Account">Account</label>
-    <input class="input_acpa" id="ac" type="text" value="" placeholder="帳號" ></p>
-    <p><label class="label_acpa" for="Password">Password</label>
-    <input class="input_acpa" id="pa" type="Password" value="" placeholder="密碼"></p><br>                        
-    <button class="box" id="login" onclick="login()">Login</button>
-    <button class="box" id="clear" onclick="fn_val('clear')">Reset</button>
-      
+
+    <div>
+        <img id="image_logo" src="{% static 'image/okayusmile.png' %}">
+    </div>
+    <div class = "div">
+        <p>
+            <label id="title">登入介面</label>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            <label class="label_acpa" for="Account" >Account</label>
+            <input class="input_acpa" id="ac" type="text" value="" placeholder="帳號" >
+        </p>
+
+        <p>
+            <label class="label_acpa" for="Password">Password</label>
+            <input class="input_acpa" id="pa" type="Password" value="" placeholder="密碼" >
+        </p>
+
+        <p>
+            <label class="label_acpa" for="Password">CAPTCHA</label>
+            <input class="input_acpa" id="CAPTCHA" type="text" value="" placeholder="驗證碼" >
+        </p>
+    </div>
+                     
+    <div class = "div">
+        
+        <button class="box" id="login" onclick="login()">Login</button>
+        <button class="box" id="clear" onclick="fn_val('clear')">Reset</button>
+    </div>
+
 </div>
 
 </body>
@@ -33,14 +57,12 @@
 </html>
 
 <script>
-    function fn_val(status) {
-        if (status == 'login') {
+function fn_val(status) {
+    if (status == 'login') {
 
-        } else if (status == 'clear') {
-            $('#ac').val('')
-            $('#pa').val('')
-
-        }
+    } else if (status == 'clear') {
+        $('#ac').val('')
+        $('#pa').val('')
     }
+}
 </script>
-
