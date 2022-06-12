@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap);
+*{
+    margin: 0;
+    padding: 0;
+    list-style:none ;
+    font-family: 'Noto Sans TC',sans-serif;
+}
+/*reset css*/
+.main_header{
+    background-color:rgba(4, 5, 5, 0.363);
+}
+.main_header .container{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    max-width: 1920px;
+    margin:auto;
+}
+.main_header .logo{
+    width: 100px;
+}
+.main_header .logo img{
+    width: 100%;
+    vertical-align: middle;
+}
+.main_header .main_nav{
+    display: flex;
+    margin:auto;
+}
+.main_header .main_nav a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 5em;
+    position: relative;
+    transform: translateY(0px);
+    transition:.5s;
+}
+.main_header .main_nav a:hover{
+    transform: translateY(-5px);
+}
+.main_header .main_nav a:after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: -5px;
+    height: 0;
+    border: 1px solid #fff;
+    transition:.5s;
+}
+.main_header .main_nav a:hover:after{
+    left: 0;
+    right: 0;
+}
+
+
+#container2 {
+    width:100%;
+    margin:0 auto;
+    font-size:13px;
+}
+#header{
+    background-color:#FFD4D4;
+    height:80px;
+    text-align:center;
+    line-height:80px;
+}
+#sidebar{
+    background-color:#FFECC9;
+    width:10%;
+    height:400px;
+    text-align:center;
+    line-height:400px;
+    float:right;
+}
+#chl_warp{
+    margin-right:10%;
+    height:400px;
+    background-color:#F2FFF2;
+    text-align:center;
+    line-height:400px;
+}
+#footer{
+    clear:both;
+    background-color:#FFD4D4;
+    height:80px;
+    text-align:center;
+    line-height:80px;
+}
+@media screen and (min-width:900px) { 
+    #sidebar_right{
+      width: 20%;
+    }
+    #content{
+        margin-right:20%
+    }
+  }

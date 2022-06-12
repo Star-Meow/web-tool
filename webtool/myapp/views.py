@@ -27,3 +27,6 @@ def login(request):
 		postform = forms.PostForm()
 	return render(request, "login.html", locals())
 
+def index(request):
+	return render(request, "index.html")
+
