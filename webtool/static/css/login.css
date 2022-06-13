@@ -27,6 +27,7 @@ form p>* {
 .container {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     /*主要框架*/
 }
 
@@ -34,6 +35,7 @@ form p>* {
     display: flex;
     flex-direction: column;
     /*li_box1~3*/
+    width: max-content;
 }
 
 #li_box1 {
@@ -59,11 +61,12 @@ form p>* {
     font-family: Kdam Thmor Pro;
     background-color: rgba(0, 0, 0, 0.829);
     color: rgb(255, 255, 255);
-    width: 278px;
+    width: 150px;
     height: 30px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     order: -1;
+    text-align: center;
 }
 
 .input_acpa {
@@ -73,6 +76,7 @@ form p>* {
     border-bottom-right-radius: 5px;
     border: 0;
     order: 1;
+    width: 500px;
 }
 
 .btn_div {
@@ -120,7 +124,7 @@ form p>* {
 #title {
     font-size: 30px;
     font-family: 標楷體;
-    width: 100px;
+    width: 200px;
     height: 40px;
     line-height: 30px;
     text-align: center;
