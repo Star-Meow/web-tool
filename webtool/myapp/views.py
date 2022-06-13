@@ -28,5 +28,5 @@ def login(request):
 	return render(request, "login.html", locals())
 
 def index(request):
-	return render(request, "index.html")
+	return render(request, "todolist_v1.html")
 
