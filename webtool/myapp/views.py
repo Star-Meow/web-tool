@@ -29,5 +29,5 @@ def login(request):
 
 
 def index(request):
-	return render(request, "index.html")
+	return render(request, "todolist_v1.html")
 
