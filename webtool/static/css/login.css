@@ -70,13 +70,21 @@ form p>* {
 }
 
 .input_acpa {
-    width: 278px;
     height: 30px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     border: 0;
     order: 1;
     width: 500px;
+}
+
+#id_captcha_1 {
+    height: 30px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 0;
+    order: 1;
+    width: 380px;
 }
 
 .btn_div {

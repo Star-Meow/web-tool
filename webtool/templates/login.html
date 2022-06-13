@@ -14,6 +14,8 @@
 
 <body >
 
+{% csrf_token %}
+
 <div class = "container" id = "login_frame">
 
     <div class = "title_div">
@@ -29,7 +31,7 @@
 
         <div class = "label_input" id ="li_box1">
             <label class="label_acpa" for="Account" >Account</label>
-            <input class="input_acpa" id="ac" type="text" value="" placeholder="帳號" >
+            <input class="input_acpa",id="ac" type="text" value="" placeholder="帳號">
         </div>
         <div class = "label_input" id ="li_box2">
             <label class="label_acpa" for="Password">Password</label>
@@ -37,14 +39,14 @@
         </div>
         <div class = "label_input" id ="li_box3">
             <label class="label_acpa" for="Password">CAPTCHA</label>
-            <input class="input_acpa" id="CAPTCHA" type="text" value="" placeholder="驗證碼" >
+            {{postform.captcha}}
         </div>
 
     </div>
                      
     <div class = "btn_div">
         
-        <button class="btn" id="login" onclick="login()">Login</button>
+        <button class="btn" id="login" onclick="fn_val('login')">Login</button>
         <button class="btn" id="clear" onclick="fn_val('clear')">Reset</button>
         <button class="btn" id="register" onclick="">register</button>
     </div>
@@ -57,12 +59,12 @@
 </html>
 
 <script>
-function fn_val(status) {
-    if (status == 'login') {
+    function fn_val(status) {
+        if (status == 'login') {
+            alert('帳號或密碼不可為空白')
+        } else if (status == 'clear') {
+            $('#ac').val('')
 
-    } else if (status == 'clear') {
-        $('#ac').val('')
-        $('#pa').val('')
+        }
     }
-}
 </script>

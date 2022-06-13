@@ -35,7 +35,7 @@ CAPTCHA_NOISE_FUNCTIONS = (
     'captcha.helpers.noise_dots', #點  
 )
 
-CAPTCHA_IMAGE_SIZE = (150, 70) #圖片大小 
+CAPTCHA_IMAGE_SIZE = (120, 30) #圖片大小 
 
 CAPTCHA_BACKGROUND_COLOR = '#ffffff' #背景頻色
 
