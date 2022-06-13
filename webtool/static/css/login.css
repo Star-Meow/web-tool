@@ -1,67 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Open+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Kdam Thmor Pro', 'Open Sans';
+}
+
 #login_frame {
-    width: 500px;
-    height: 250px;
+    width: 650px;
+    height: 300px;
     padding: 13px;
     position: absolute;
     left: 50%;
     top: 50%;
     margin-left: -200px;
     margin-top: -200px;
-    background-color: rgba(4, 5, 5, 0.363);
+    background-color: rgba(12, 14, 14, 0.514);
     border-radius: 10px;
-    text-align: center;
 }
 
 form p>* {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: left;
 }
 
-#image_logo {
-    margin-top: -25px;
-    float: right;
-    width: 96px;
-    height: 96px;
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*主要框架*/
+}
+
+.acpa_div {
+    display: flex;
+    flex-direction: column;
+    /*li_box1~3*/
+    width: max-content;
+}
+
+#li_box1 {
+    order: 1;
+}
+
+#li_box2 {
+    order: 2;
+}
+
+#li_box3 {
+    order: 3;
+}
+
+.label_input {
+    display: flex;
+    flex-direction: row;
+    /*label~input*/
+}
+
+.label_acpa {
+    font-size: 18px;
+    font-family: Kdam Thmor Pro;
+    background-color: rgba(0, 0, 0, 0.829);
+    color: rgb(255, 255, 255);
+    width: 150px;
+    height: 30px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    order: -1;
+    text-align: center;
+}
+
+.input_acpa {
+    width: 278px;
+    height: 30px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 0;
+    order: 1;
+    width: 500px;
+}
+
+.btn_div {
+    display: flex;
+    flex-direction: row;
+    /*btn1~3*/
+}
+
+.btn {
+    font-size: 20px;
+    font-family: Kdam Thmor Pro;
+    width: 20%;
+    height: 30px;
+    font-size: 14px;
+    background-color: #ffffff;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.btn:hover {
+    background-color: #e73636;
+}
+
+#login {
+    order: 1;
+}
+
+#register {
+    order: 2;
+}
+
+#clear {
+    order: 3;
+}
+
+.title_div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /*title和圖片*/
 }
 
 #title {
     font-size: 30px;
     font-family: 標楷體;
-    width: 100px;
+    width: 200px;
     height: 40px;
     line-height: 30px;
     text-align: center;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    order: 1;
 }
 
-.label_acpa {
-    font-size: 30px;
-    font-family: CenturyGothic;
-    text-align: center;
-    background-color: rgba(245, 245, 245, 0.363);
-    width: 20%;
-    height: 30px;
-    font-size: 20px;
-}
-
-.input_acpa {
-    width: 278px;
-    height: 28px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border: 0;
-}
-
-.box {
-    font-size: 20px;
-    font-family: CenturyGothic;
-    width: 20%;
-    height: 30px;
-    font-size: 14px;
-    background-color: #ffffff;
-}
-
-.box:hover {
-    background-color: #00AEAE;
+#image_logo {
+    margin-top: -10px;
+    float: inline-start;
+    width: 64px;
+    height: 64px;
+    order: 2;
 }
