@@ -10,12 +10,9 @@
     width: 600px;
     height: 300px;
     padding: 13px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -200px;
-    margin-top: -200px;
-    background-color: rgba(12, 14, 14, 0.514);
+    margin: 0px auto;
+    margin-top: 300px;
+    background-color: rgba(204, 169, 136, 0.767);
     border-radius: 10px;
 }
 
@@ -34,8 +31,10 @@ form p>* {
 .acpa_div {
     display: flex;
     flex-direction: column;
-    /*li_box1~3*/
+    justify-content: space-between;
     width: max-content;
+    flex-basis: 35%;
+    /*li_box1~3*/
 }
 
 #li_box1 {
@@ -127,8 +126,9 @@ form p>* {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    /*title和圖片*/
     justify-content: center;
+    margin: 0px auto;
+    /*title和圖片*/
 }
 
 #title {

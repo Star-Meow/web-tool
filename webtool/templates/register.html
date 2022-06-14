@@ -46,13 +46,12 @@
             <label class="label_acpa" for="CAPTCHA">CAPTCHA</label>
             {{postform.captcha}}
         </div>
-    <span>{{message}}</span>
     </div>
                      
     <div class = "btn_div">
         <input type = "submit" class="btn" id="register" value = "Register">
-        <button class="btn" id="Back" a herf ="127.0.0.1:8000/login">Back</button>
-        <button class="btn" id="clear" onclick="fn_btn('clear')">Reset</button>
+        <input type ="button" class="btn" id="back" value = "Back" onclick="window.location='/login/'">
+        <button class="btn" id="Reset" onclick="fn_btn('clear')">Reset</button>
 
 
     </div>

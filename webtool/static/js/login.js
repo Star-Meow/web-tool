@@ -5,6 +5,7 @@ function fn_btn(status) {
 
     } else if (status == 'clear') {
         $('.input_acpa').val('')
+
     }
 
 }
