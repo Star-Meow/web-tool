@@ -12,9 +12,9 @@ def register(request):
 	postform = forms.PostForm(request.POST)
 	if request.method == "POST":
 		if postform.is_valid():  #forms驗證通過
-			Ac = postform.POST['Ac']
-			Pa = postform.POST['Pa']
-			cEmail = postform.POST['cEmail']
+			Ac = postform['Ac']
+			Pa = postform['Pa']
+			cEmail = postform['cEmail']
 			unit = Account.objects.create(Ac = Ac , Pa = Pa , cEmail =cEmail)
 			unit.save()
 			redirect('/login/')

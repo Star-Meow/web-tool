@@ -74,6 +74,9 @@ body {
 
 /* 新增東西的地方頭 */
 
+
+/* 新增東西的地方尾 */
+
 ::selection {
     color: #fff;
     background: #3C87FF;
@@ -320,18 +323,18 @@ li) {
 
 /* 新增東西的地方尾 */
 
+.main_footer .footer_container {
+    display: flex;
+    width: 1900px;
+    margin: auto;
+}
+
 
 /* 以下是頁尾 */
 
 .main_footer {
     padding: 150px 0 0;
     background-color: rgba(4, 5, 5, 0.363)
-}
-
-.main_footer .footer_container {
-    display: flex;
-    width: 1900px;
-    margin: auto;
 }
 
 .footer_item {
