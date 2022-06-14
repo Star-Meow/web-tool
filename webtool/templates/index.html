@@ -9,25 +9,40 @@
     <link href="{% static 'css/index.css ' %}" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, min-scale=1, max-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
 
 
-<body >
+<body>
     <header class="main_header">       
         <div class="container">
             <a href="#" class="logo">
                 <img id="image_logo" src="{% static 'image/okayusmile.png' %}">
             </a>
             <nav class="main_nav">
-                <a href="#">測試1</a>
-                <a href="#">測試2</a>
+                <a href="#">鬧鐘</a>
                 <a href="#">使用者設定</a>
+                <a href="#">登出</a>
             </nav>
         </div>
     </header>
 
     <!-- 新增東西的地方的頭 -->
-    123
+    <div class="wrapper">
+        <div class="task-input">
+          <img src="{% static 'image/bars.svg ' %}" alt="icon">
+          <input type="text" placeholder="新增一個代辦事項">
+        </div>
+        <div class="controls">
+          <div class="filters">
+            <span class="active" id="all">全部</span>
+            <span id="pending">執行中</span>
+            <span id="completed">完成</span>
+          </div>
+          <button class="clear-btn">清除全部</button>
+        </div>
+        <ul class="task-box"></ul>
+    </div>
     <!-- 新增東西的地方的尾 -->
     <div class="main_footer">
         <div class="footer_container">
@@ -48,6 +63,8 @@
             Made by Jason Jian & Kevin Zeng & Peter Cheng
         </div>
     </div>
+    <!-- Javascript -->
+    <script src="{% static 'js/todolist_v2.js ' %}"></script>
 </body>
 
 

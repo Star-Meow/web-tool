@@ -15,7 +15,7 @@
     top: 50%;
     margin-left: -200px;
     margin-top: -200px;
-    background-color: rgba(12, 14, 14, 0.514);
+    background-color: rgba(204, 169, 136, 0.767);
     border-radius: 10px;
 }
 
@@ -50,10 +50,41 @@ form p>* {
     order: 3;
 }
 
+#li_box4 {
+    order: 4;
+}
+
 .label_input {
     display: flex;
     flex-direction: row;
     /*label~input*/
+}
+
+#id_Ac {
+    height: 30px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 0;
+    order: 1;
+    width: 450px;
+}
+
+#id_Pa {
+    height: 30px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 0;
+    order: 1;
+    width: 450px;
+}
+
+#id_cEmail {
+    height: 30px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 0;
+    order: 1;
+    width: 450px;
 }
 
 .label_acpa {
@@ -110,16 +141,16 @@ form p>* {
     background-color: #e73636;
 }
 
-#login {
-    order: 1;
+#register {
+    order: -1;
 }
 
-#register {
-    order: 2;
+#back {
+    order: 3;
 }
 
 #clear {
-    order: 3;
+    order: 1;
     margin-left: auto;
 }
 

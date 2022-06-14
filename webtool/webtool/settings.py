@@ -31,7 +31,7 @@ INSTALLED_APPS = [
 
 CAPTCHA_NOISE_FUNCTIONS = (
     #'captcha.helpers.noise_null', #没有樣式  
-    'captcha.helpers.noise_arcs', #線  
+    #'captcha.helpers.noise_arcs', #線  
     'captcha.helpers.noise_dots', #點  
 )
 
@@ -39,10 +39,10 @@ CAPTCHA_IMAGE_SIZE = (120, 30) #圖片大小
 
 CAPTCHA_BACKGROUND_COLOR = '#ffffff' #背景頻色
 
-CAPTCHA_CHALLENGE_FUNCT = 'captcha.helpers.random_char_challenge' #圖片為英文字母 
-#CAPTCHA_CHALLENGE_FUNCT = 'captcha.helpers.math_challenge' #圖片中為數學計算式  
+#CAPTCHA_CHALLENGE_FUNCT = 'captcha.helpers.random_char_challenge' #圖片為英文字母 
+CAPTCHA_CHALLENGE_FUNCT = 'captcha.helpers.math_challenge' #圖片中為數學計算式  
   
-CAPTCHA_LENGTH = 5 #英文字母個數 
+#CAPTCHA_LENGTH = 5 #英文字母個數 
 
 CAPTCHA_TIMEOUT = 3 #時間限制(分)  
 

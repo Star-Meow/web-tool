@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
 
-    <link href="{% static 'css/login.css ' %}" rel="stylesheet" type='text/css'>
+    <link href="{% static 'css/register.css ' %}" rel="stylesheet" type='text/css'>
     <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
 </head>
 
@@ -21,7 +21,7 @@
 
     <div class = "title_div">
         
-        <label id="title">登入介面</label>
+        <label id="title">註冊帳號</label>
 
         <img id="image_logo" src="{% static 'image/okayusmile.png' %}">
         </p>
@@ -32,33 +32,35 @@
 
         <div class = "label_input" id ="li_box1">
             <label class="label_acpa" for="Account" >Account</label>
-            <input class="input_acpa",id="ac" type="text" value="" placeholder="帳號">
+            {{postform.Ac}}
         </div>
         <div class = "label_input" id ="li_box2">
-            <label class="label_acpa" for="Password">Password</label>
-            <input class="input_acpa" id="pa" type="Password" value="" placeholder="密碼" >
+            <label class="label_acpa" for="Password" >Password</label>
+            {{postform.Pa}}
         </div>
         <div class = "label_input" id ="li_box3">
+            <label class="label_acpa" for="email" >Email</label>
+            {{postform.cEmail}}
+        </div>
+        <div class = "label_input" id ="li_box4">
             <label class="label_acpa" for="CAPTCHA">CAPTCHA</label>
             {{postform.captcha}}
         </div>
-
+    <span>{{message}}</span>
     </div>
                      
     <div class = "btn_div">
-        
-        <input type = "submit" class="btn" id="login" value = "Login">
+        <input type = "submit" class="btn" id="register" value = "Register">
+        <button class="btn" id="Back" a herf ="127.0.0.1:8000/login">Back</button>
         <button class="btn" id="clear" onclick="fn_btn('clear')">Reset</button>
-        <button class="btn" id="register" onclick="register()">Register</button>
+
 
     </div>
 
 </div>
 
-<script src="{% static 'js/login.js ' %}"></script>
-
+    <script src="{% static 'js/register.js ' %}"></script>
 </body>
 
 
 </html>
-
