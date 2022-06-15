@@ -22,12 +22,17 @@ from myapp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.space),
+ 
+    path('register/', views.register),
+    path('login/', views.login),
+    path('logout/',views.logout),
 
     path('index/', views.index),
-    path('login/', views.login),
-    path('register/', views.register),
-
-
+    path('alarm/', views.alarm),
+    path('about-us/', views.aboutus),
+    path('how-to-use/', views.howtouse),
+    path('setting/', views.setting),
     path('captcha/', include('captcha.urls')),
     
 

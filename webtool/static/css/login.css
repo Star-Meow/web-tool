@@ -77,6 +77,24 @@ form p>* {
     width: 450px;
 }
 
+#id_Ac {
+    height: 30px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 0;
+    order: 1;
+    width: 450px;
+}
+
+#id_Pa {
+    height: 30px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 0;
+    order: 1;
+    width: 450px;
+}
+
 #id_captcha_1 {
     height: 30px;
     border-top-right-radius: 5px;

@@ -31,18 +31,22 @@
     <div class = "acpa_div">
 
         <div class = "label_input" id ="li_box1">
+            <label class="label_acpa" for="Username" >Username</label>
+            {{postform.Username}}
+        </div>
+        <div class = "label_input" id ="li_box2">
             <label class="label_acpa" for="Account" >Account</label>
             {{postform.Ac}}
         </div>
-        <div class = "label_input" id ="li_box2">
+        <div class = "label_input" id ="li_box3">
             <label class="label_acpa" for="Password" >Password</label>
             {{postform.Pa}}
         </div>
-        <div class = "label_input" id ="li_box3">
+        <div class = "label_input" id ="li_box4">
             <label class="label_acpa" for="email" >Email</label>
             {{postform.cEmail}}
         </div>
-        <div class = "label_input" id ="li_box4">
+        <div class = "label_input" id ="li_box5">
             <label class="label_acpa" for="CAPTCHA">CAPTCHA</label>
             {{postform.captcha}}
         </div>
@@ -51,7 +55,7 @@
     <div class = "btn_div">
         <input type = "submit" class="btn" id="register" value = "Register">
         <input type ="button" class="btn" id="back" value = "Back" onclick="window.location='/login/'">
-        <button class="btn" id="Reset" onclick="fn_btn('clear')">Reset</button>
+        <input type = "reset" class="btn" id="Reset" value = "Reset">
 
 
     </div>

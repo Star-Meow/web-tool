@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+{% load static %}
+<title>首頁</title>
+
+<html>
+
+<head>
+    <meta charset=' utf-8 '>
+    <link href="{% static 'css/aboutus.css' %}" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, min-scale=1, max-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+
+<body>
+
+    <header class="main_header">       
+        <div class="container">
+            <a href="#" class="logo">
+                <img id="image_logo" src="{% static 'image/okayusmile.png' %}">
+            </a>
+            <p>歡迎!{{Username}}</p>
+            <nav class="main_nav">
+                <a href="http://127.0.0.1:8000/alarm">鬧鐘</a>
+                <a href="http://127.0.0.1:8000/setting">使用者設定</a>
+                <a href="http://127.0.0.1:8000/logout">登出</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 新增東西的地方的頭 -->
+    <div class="abu_container">
+        <div class="adu_item">
+            <img src="{% static 'image/idkjyj.png' %}">
+            <div class="abs_text">
+                <h2>簡宇健</h2>
+                <p>負責項目：To-do-list網頁製作、鬧鐘網頁製作、網頁模板設計包括對應的css與js函式與協助後端Debug。</p>
+            </div>
+        </div>
+        <div class="adu_item">
+            <img src="{% static 'image/linglan.png' %}">
+            <div class="abs_text">
+                <h2>曾俊杰</h2>
+                <p>負責項目：登入註冊系統、資料庫資料處理、使用者設定頁面,包括對應的css與後端函式整合。</p>
+            </div>
+        </div>
+    </div>
+    <!-- 新增東西的地方的尾 -->
+    <div class="main_footer">
+        <div class="footer_container">
+            <div class="footer_item">
+                <h4>相關訊息</h4>
+                <nav>
+                    <a href="http://127.0.0.1:8000/about-us">關於我們</a>
+                </nav>
+            </div>
+            <div class="footer_item">
+                <h4>使用說明</h4>
+                <nav>
+                    <a href="http://127.0.0.1:8000/how-to-use">計畫表使用說明</a>
+                </nav>
+            </div>
+        </div>
+        <div class="made_by">
+            Made by Jason Jian & Kevin Zeng & Peter Cheng
+        </div>
+    </div>
+    
+</body>
+
+
+</html>

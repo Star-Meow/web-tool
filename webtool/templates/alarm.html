@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+{% load static %}
+<title>首頁</title>
+
+<html>
+
+<head>
+    <meta charset=' utf-8 '>
+    <link href="{% static 'css/alarm.css ' %}" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, min-scale=1, max-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+
+<body>
+    <header class="main_header">       
+        <div class="container">
+            <a href="#" class="logo">
+                <img id="image_logo" src="{% static 'image/okayusmile.png' %}">
+            </a>
+            <div class = "user_div">
+                <label id = 'username'>歡迎{{username}}!<label>
+            </div>
+            <nav class="main_nav">
+                <a href="http://127.0.0.1:8000/index">待辦清單</a>
+                <a href="http://127.0.0.1:8000/setting">使用者設定</a>
+                <a href="http://127.0.0.1:8000/logout">登出</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 新增東西的地方的頭 -->
+    <div class="alarm_container">
+        <h1 class="datetime">0000/00/00</h1>
+        <h1 class="hourtime">00:00:00 上午</h1>
+        <div class="hour_content">
+            <div class="hour_column">
+                <select>
+                    <option value="小時">小時</option>
+                </select>
+            </div>
+            <div class="hour_column">
+                <select>
+                    <option value="分鐘">分鐘</option>
+                </select>
+            </div>
+            <div class="hour_column">
+                <select>
+                    <option value="上午/下午">上午/下午</option>
+                </select>
+            </div>
+        </div>
+        <button>設定鬧鐘</button> 
+    </div>
+
+    <!-- 新增東西的地方的尾 -->
+    <div class="main_footer">
+        <div class="footer_container">
+            <div class="footer_item">
+                <h4>相關訊息</h4>
+                <nav>
+                    <a href="http://127.0.0.1:8000/about-us">關於我們</a>
+                </nav>
+            </div>
+            <div class="footer_item">
+                <h4>使用說明</h4>
+                <nav>
+                    <a href="http://127.0.0.1:8000/how-to-use">計畫表使用說明</a>
+                </nav>
+            </div>
+        </div>
+        <div class="made_by">
+            Made by Jason Jian & Kevin Zeng & Peter Cheng
+        </div>
+    </div>
+    <!-- Javascript -->
+    <script src="{% static 'js/alarm.js ' %}"></script>
+    <script>RingTone = new Audio("{% static 'audio/ringtone.mp3 ' %}");</script>
+</body>
+
+
+</html>

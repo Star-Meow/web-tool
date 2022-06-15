@@ -16,6 +16,18 @@
 <form action="." method="POST" name="form1">
 {% csrf_token %}
 
+
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>
+        {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}Important: {% endif %}
+        {{ message }}
+    </li>
+    {% endfor %}
+</ul>
+{% endif %}
+
 <div class = "container" id = "login_frame">
 
     <div class = "title_div">
@@ -31,15 +43,15 @@
 
         <div class = "label_input" id ="li_box1">
             <label class="label_acpa" for="Account" >Account</label>
-            <input class="input_acpa",id="ac" type="text" value="" placeholder="帳號">
+            {{LoginFrom.Ac}}
         </div>
         <div class = "label_input" id ="li_box2">
             <label class="label_acpa" for="Password">Password</label>
-            <input class="input_acpa" id="pa" type="Password" value="" placeholder="密碼" >
+            {{LoginFrom.Pa}}
         </div>
         <div class = "label_input" id ="li_box3">
             <label class="label_acpa" for="CAPTCHA">CAPTCHA</label>
-            {{postform.captcha}}
+            {{LoginFrom.captcha}}
         </div>
 
     </div>
@@ -48,7 +60,7 @@
         
         <input type = "submit" class="btn" id="login" value = "Login">
         <input type ="button" class="btn" id="register" value = "Register" onclick="window.location='/register/'">
-        <button class="btn" id="clear" onclick="fn_btn('clear')">Reset</button>
+        <input type = "reset" class="btn" id="clear" value = "Reset">
 
     </div>
 

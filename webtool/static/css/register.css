@@ -25,6 +25,7 @@ form p>* {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-basis: 45%;
     /*主要框架*/
 }
 
@@ -33,8 +34,8 @@ form p>* {
     flex-direction: column;
     justify-content: space-between;
     width: max-content;
-    flex-basis: 35%;
-    /*li_box1~3*/
+    flex-basis: 58%;
+    /*li_box1~5*/
 }
 
 #li_box1 {
@@ -53,10 +54,23 @@ form p>* {
     order: 4;
 }
 
+#li_box5 {
+    order: 5;
+}
+
 .label_input {
     display: flex;
     flex-direction: row;
     /*label~input*/
+}
+
+#id_Username {
+    height: 30px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 0;
+    order: 1;
+    width: 450px;
 }
 
 #id_Ac {
@@ -157,8 +171,8 @@ form p>* {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    /*title和圖片*/
     justify-content: center;
+    /*title和圖片*/
 }
 
 #title {
